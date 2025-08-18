@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('assets/Comic Sans MS.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+:root {     
+    --hue_gold: 51;
+    --hue_silver: 0;
+    --hue_bronze: 40;
+    --hue_points: 157;
+}
+
+#table {
+    width: fit-content;
+    height: fit-content;
+    gap: 15%;
+    background-color: rgba(0, 0, 0, 0.381);
+    padding: 4px;
+    border-radius: 8px;
+}
+
+#mobile-message {
+    display: none;
+}
+
+#explanation {
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: hsl(0, 0%, 78%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+main {
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    flex: 1 0 auto;
+}
+
+a, a:visited {
+    color: #06233f;
+    text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: #2f77ba;
+}
+
+table {
+    border-spacing: 10px;
+}
+td, th {
+    padding: 10px;
+}
+th:nth-child(1), tbody tr td:nth-child(1) {
+    --hue: 51;
+    --saturation: 0%;
+}
+th:nth-child(2), tbody tr td:nth-child(2) {
+    --hue: 157;
+    --saturation: 80%;
+}
+th:nth-child(3), tbody tr td:nth-child(3) {
+    --hue: 51;
+    --saturation: 80%;
+}
+th:nth-child(4), tbody tr td:nth-child(4) {
+    --hue: 0;
+    --saturation: 0%;
+}
+th:nth-child(5), tbody tr td:nth-child(5){  
+    --hue: 40;
+    --saturation: 90%;
+}
+
+th {
+    background-color: hsl(var(--hue), var(--saturation), 70%);
+}
+
+td {
+    background-color: hsl(var(--hue), var(--saturation), 85%);
+}
+
+footer {
+    background-color: hsl(0, 0%, 57%);
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    flex-direction: row;
+}
+
+footer p {
+  margin-left: 14px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    main, header, footer {
+        display: none;
+    }   
+
+    #mobile-message {
+        display: block;
+    }
+}

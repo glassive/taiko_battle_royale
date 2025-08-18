@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Taiko Battle Royale Stats</title>
+</head>
+<body>
+    <p id="mobile-message">Please use a desktop browser.</p>
+    <header>
+        <img src="assets/don.gif" alt="don-chan gif" class="gif">
+        <h1>Taiko Battle Royale Stats</h1>
+        <img src="assets/kat.gif" alt="katsu-don gif" class="gif">
+    </header>
+
+    <main>
+        <div id="table"></div>
+        <div id="aside">
+            <div id=explanation>
+                <p>If you get top 3 on any map during any battle royale, you will appear on this leaderboard.</p>
+                <p>Points are calculated as follows: 3 × Firsts + 2 × Seconds + 1 × Thirds</p>
+            </div>
+            <div id="download">
+                <form action="placements.csv">
+                    <input type="submit" value="Download CSV" />
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made by <a href="https://osu.ppy.sh/u/12453848" target="_blank">glassive</a>.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
