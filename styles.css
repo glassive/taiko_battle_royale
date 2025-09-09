@@ -10,9 +10,9 @@
 }
 
 :root {     
-    --hue_gold: 51;
-    --hue_silver: 0;
-    --hue_bronze: 40;
+    --hue_gold: 200;
+    --hue_silver: 230;
+    --hue_bronze: 260;
     --hue_points: 157;
 }
 
@@ -23,6 +23,7 @@
     background-color: rgba(0, 0, 0, 0.381);
     padding: 4px;
     border-radius: 8px;
+    margin-bottom: 50px;
 }
 
 #mobile-message {
@@ -42,6 +43,7 @@ header {
     gap: 10%;
     font-size: 20px;
     margin-bottom: 40px;
+    padding: 10px 0;
 }
 
 main {
@@ -68,33 +70,37 @@ table {
 td, th {
     padding: 10px;
 }
-th:nth-child(1), tbody tr td:nth-child(1) {
+th:nth-child(1), tbody tr td:nth-child(1), th:nth-child(2), tbody tr td:nth-child(2) {
     --hue: 51;
     --saturation: 0%;
-}
-th:nth-child(2), tbody tr td:nth-child(2) {
-    --hue: 157;
-    --saturation: 80%;
 }
 th:nth-child(3), tbody tr td:nth-child(3) {
-    --hue: 51;
-    --saturation: 80%;
+    --hue: var(--hue_points);
 }
 th:nth-child(4), tbody tr td:nth-child(4) {
-    --hue: 0;
-    --saturation: 0%;
+    --hue: var(--hue_gold);
 }
-th:nth-child(5), tbody tr td:nth-child(5){  
-    --hue: 40;
-    --saturation: 90%;
+th:nth-child(5), tbody tr td:nth-child(5) {
+    --hue: var(--hue_silver);
+}   
+th:nth-child(6), tbody tr td:nth-child(6){  
+    --hue: var(--hue_bronze);
+}
+th, tbody {
+    --saturation: 80%;
 }
 
 th {
     background-color: hsl(var(--hue), var(--saturation), 70%);
+    white-space: nowrap;
 }
 
 td {
     background-color: hsl(var(--hue), var(--saturation), 85%);
+}
+
+.sorted {
+    border: 2px solid hsl(var(--hue), var(--saturation), 20%);
 }
 
 footer {
