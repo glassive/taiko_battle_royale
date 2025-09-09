@@ -4,4 +4,4 @@
 
 This repository is used to store data used by the Taiko Seeder bot, another tool that I've made.
 You can find user-submitted qualifier replays, automatically generated seeding files in .csv, as well as a `placements.csv` file which tracks the total #1, #2 and #3 placements across all played maps for all players.
-I will be making a frontend page with GitHub Pages, allowing anyone to easily see custom data related to the tournament.
+A frontend webpage hosted on GitHub Pages is available for public use at https://glassive.github.io/taiko_battle_royale/
